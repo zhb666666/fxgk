@@ -33,8 +33,8 @@ export const useSafetyStore = defineStore('safety', () => {
         riskLevel: 'high',
         safetyGuidelines: '穿戴防护用品，严禁超速运行',
         trainingRequired: true,
-        lastReviewed: new Date(2024, 0, 15),
-        approver: '李明',
+        lastReviewed: new Date(2025, 0, 15),
+        approver: '俞宏斌',
         status: '有效'
       },
       {
@@ -45,8 +45,8 @@ export const useSafetyStore = defineStore('safety', () => {
         riskLevel: 'high',
         safetyGuidelines: '佩戴防护面罩，使用于通风环境',
         trainingRequired: true,
-        lastReviewed: new Date(2024, 0, 10),
-        approver: '王刚',
+        lastReviewed: new Date(2025, 0, 10),
+        approver: '刘威',
         status: '有效'
       }
     ]
@@ -55,35 +55,35 @@ export const useSafetyStore = defineStore('safety', () => {
     specialOperations.value = [
       {
         id: 1,
-        workerName: '张三',
+        workerName: '俞宏斌',
         workType: '登高作业',
-        permitNumber: 'GZ-2024-001',
-        issueDate: new Date(2024, 0, 15),
-        expiryDate: new Date(2024, 11, 15),
+        permitNumber: 'GZ-2025-001',
+        issueDate: new Date(2025, 0, 15),
+        expiryDate: new Date(2025, 11, 15),
         location: '厂房三层',
-        supervisor: '李明',
+        supervisor: '俞宏斌',
         status: '有效'
       },
       {
         id: 2,
-        workerName: '李四',
+        workerName: '刘威',
         workType: '叉车作业',
-        permitNumber: 'CJ-2024-001',
-        issueDate: new Date(2024, 0, 10),
-        expiryDate: new Date(2024, 11, 10),
+        permitNumber: 'CJ-2025-001',
+        issueDate: new Date(2025, 0, 10),
+        expiryDate: new Date(2025, 11, 10),
         location: '仓库',
-        supervisor: '王刚',
+        supervisor: '刘威',
         status: '有效'
       },
       {
         id: 3,
-        workerName: '王五',
+        workerName: '漆刚',
         workType: '有限空间作业',
-        permitNumber: 'YX-2024-001',
-        issueDate: new Date(2024, 0, 5),
-        expiryDate: new Date(2024, 11, 5),
+        permitNumber: 'YX-2025-001',
+        issueDate: new Date(2025, 0, 5),
+        expiryDate: new Date(2025, 11, 5),
         location: '处理池',
-        supervisor: '张华',
+        supervisor: '漆刚',
         status: '有效'
       }
     ]
@@ -93,26 +93,26 @@ export const useSafetyStore = defineStore('safety', () => {
       {
         id: 1,
         injuryName: '手部割伤',
-        injuryDate: new Date(2024, 0, 20),
-        workerName: '赵六',
+        injuryDate: new Date(2025, 0, 20),
+        workerName: '俞宏斌',
         department: '生产部',
         severity: 'light',
         location: '生产车间A',
         description: '操作刀具时不小心割伤',
         treatmentStatus: '已治疗',
-        approver: '李明'
+        approver: '俞宏斌'
       },
       {
         id: 2,
         injuryName: '烫伤',
-        injuryDate: new Date(2024, 0, 18),
-        workerName: '孙七',
+        injuryDate: new Date(2025, 0, 18),
+        workerName: '刘威',
         department: '维护部',
         severity: 'medium',
         location: '锅炉房',
         description: '接触高温管道导致烫伤',
         treatmentStatus: '治疗中',
-        approver: '王刚'
+        approver: '刘威'
       }
     ]
 
@@ -123,24 +123,24 @@ export const useSafetyStore = defineStore('safety', () => {
         facilityName: '消防栓 A1',
         facilityType: '消防栓',
         location: '一楼走廊',
-        installDate: new Date(2022, 0, 15),
-        lastInspection: new Date(2024, 0, 10),
-        nextInspection: new Date(2024, 3, 10),
+        installDate: new Date(2023, 0, 15),
+        lastInspection: new Date(2025, 0, 10),
+        nextInspection: new Date(2025, 3, 10),
         status: '正常',
         capacity: '100升',
-        inspector: '李明'
+        inspector: '俞宏斌'
       },
       {
         id: 2,
         facilityName: '灭火器 A2',
         facilityType: '灭火器',
         location: '生产车间',
-        installDate: new Date(2023, 0, 15),
-        lastInspection: new Date(2024, 0, 5),
-        nextInspection: new Date(2024, 3, 5),
+        installDate: new Date(2024, 0, 15),
+        lastInspection: new Date(2025, 0, 5),
+        nextInspection: new Date(2025, 3, 5),
         status: '正常',
         capacity: '5kg',
-        inspector: '王刚'
+        inspector: '刘威'
       }
     ]
 
@@ -148,26 +148,26 @@ export const useSafetyStore = defineStore('safety', () => {
     hotWorkPermits.value = [
       {
         id: 1,
-        permitNumber: 'HW-2024-001',
-        workDate: new Date(2024, 0, 20),
+        permitNumber: 'HW-2025-001',
+        workDate: new Date(2025, 0, 20),
         location: '焊接车间',
         workType: '焊接作业',
-        applicant: '张师傅',
-        supervisor: '李明',
+        applicant: '俞宏斌',
+        supervisor: '俞宏斌',
         safetyMeasures: '配备灭火器，安排监护人',
-        approver: '安全主任',
+        approver: '漆刚',
         status: '已批准'
       },
       {
         id: 2,
-        permitNumber: 'HW-2024-002',
-        workDate: new Date(2024, 0, 15),
+        permitNumber: 'HW-2025-002',
+        workDate: new Date(2025, 0, 15),
         location: '维修部',
         workType: '切割作业',
-        applicant: '王师傅',
-        supervisor: '王刚',
+        applicant: '刘威',
+        supervisor: '刘威',
         safetyMeasures: '清理易燃物品，配备安全防护',
-        approver: '安全主任',
+        approver: '漆刚',
         status: '已完成'
       }
     ]
@@ -176,26 +176,26 @@ export const useSafetyStore = defineStore('safety', () => {
     fireDrills.value = [
       {
         id: 1,
-        drillName: '2024年一月消防演练',
-        drillDate: new Date(2024, 0, 15),
+        drillName: '2025年一月消防演练',
+        drillDate: new Date(2025, 0, 15),
         location: '全厂',
         participantCount: 250,
         duration: 60,
         organizer: '安全部',
-        director: '李明',
+        director: '俞宏斌',
         achievements: '全员迅速撤离，用时3分钟',
         issues: '部分人员对集合点不熟悉',
         status: '已完成'
       },
       {
         id: 2,
-        drillName: '2024年冬季应急演练',
-        drillDate: new Date(2024, 0, 10),
+        drillName: '2025年冬季应急演练',
+        drillDate: new Date(2025, 0, 10),
         location: '生产车间',
         participantCount: 100,
         duration: 45,
         organizer: '安全部',
-        director: '王刚',
+        director: '刘威',
         achievements: '成功模拟火灾处置流程',
         issues: '无',
         status: '已完成'
@@ -208,25 +208,25 @@ export const useSafetyStore = defineStore('safety', () => {
         id: 1,
         monitoringPoint: '排水口 A',
         location: '厂区东侧',
-        monitoringDate: new Date(2024, 0, 20),
+        monitoringDate: new Date(2025, 0, 20),
         pH: 7.2,
         BOD: 15,
         COD: 45,
         suspendedSolids: 20,
         status: '达标',
-        inspector: '张华'
+        inspector: '俞宏斌'
       },
       {
         id: 2,
         monitoringPoint: '排水口 B',
         location: '厂区西侧',
-        monitoringDate: new Date(2024, 0, 18),
+        monitoringDate: new Date(2025, 0, 18),
         pH: 7.5,
         BOD: 12,
         COD: 40,
         suspendedSolids: 18,
         status: '达标',
-        inspector: '刘英'
+        inspector: '刘威'
       }
     ]
 
@@ -236,25 +236,25 @@ export const useSafetyStore = defineStore('safety', () => {
         id: 1,
         monitoringPoint: '车间排放口1',
         location: '生产车间A',
-        monitoringDate: new Date(2024, 0, 20),
+        monitoringDate: new Date(2025, 0, 20),
         dustConcentration: 25,
         SO2: 15,
         NOx: 35,
         pollutants: '颗粒物、硫化物',
         status: '达标',
-        inspector: '陈军'
+        inspector: '漆刚'
       },
       {
         id: 2,
         monitoringPoint: '车间排放口2',
         location: '生产车间B',
-        monitoringDate: new Date(2024, 0, 18),
+        monitoringDate: new Date(2025, 0, 18),
         dustConcentration: 20,
         SO2: 10,
         NOx: 30,
         pollutants: '颗粒物',
         status: '达标',
-        inspector: '王刚'
+        inspector: '俞宏斌'
       }
     ]
 
@@ -267,8 +267,8 @@ export const useSafetyStore = defineStore('safety', () => {
         quantity: 50,
         unit: '升',
         storageLocation: '危废库1',
-        storageDate: new Date(2024, 0, 15),
-        expiryDate: new Date(2024, 3, 15),
+        storageDate: new Date(2025, 0, 15),
+        expiryDate: new Date(2025, 3, 15),
         hazardCode: 'HW08',
         disposalMethod: '委外处理',
         status: '储存中'
@@ -280,8 +280,8 @@ export const useSafetyStore = defineStore('safety', () => {
         quantity: 100,
         unit: '千克',
         storageLocation: '危废库2',
-        storageDate: new Date(2024, 0, 10),
-        expiryDate: new Date(2024, 3, 10),
+        storageDate: new Date(2025, 0, 10),
+        expiryDate: new Date(2025, 3, 10),
         hazardCode: 'HW49',
         disposalMethod: '委外处理',
         status: '储存中'
@@ -297,8 +297,8 @@ export const useSafetyStore = defineStore('safety', () => {
         quantity: 200,
         unit: '升',
         storageLocation: '化学品库1',
-        storageDate: new Date(2024, 0, 1),
-        expiryDate: new Date(2024, 11, 31),
+        storageDate: new Date(2025, 0, 1),
+        expiryDate: new Date(2025, 11, 31),
         hazardSymbol: '腐蚀',
         supplier: '化工公司A',
         status: '在库'
@@ -310,8 +310,8 @@ export const useSafetyStore = defineStore('safety', () => {
         quantity: 150,
         unit: '千克',
         storageLocation: '化学品库2',
-        storageDate: new Date(2024, 0, 5),
-        expiryDate: new Date(2024, 11, 31),
+        storageDate: new Date(2025, 0, 5),
+        expiryDate: new Date(2025, 11, 31),
         hazardSymbol: '腐蚀',
         supplier: '化工公司B',
         status: '在库'
@@ -329,7 +329,7 @@ export const useSafetyStore = defineStore('safety', () => {
         manufacturer: '安全科技有限公司',
         status: '正常',
         recordCount: 1250,
-        lastMaintenance: new Date(2024, 0, 10)
+        lastMaintenance: new Date(2025, 0, 10)
       },
       {
         id: 2,
@@ -340,7 +340,7 @@ export const useSafetyStore = defineStore('safety', () => {
         manufacturer: '安全科技有限公司',
         status: '正常',
         recordCount: 3500,
-        lastMaintenance: new Date(2024, 0, 5)
+        lastMaintenance: new Date(2025, 0, 5)
       }
     ]
 
@@ -355,7 +355,7 @@ export const useSafetyStore = defineStore('safety', () => {
         installDate: new Date(2023, 0, 15),
         status: '运行中',
         recordingDays: 30,
-        lastMaintenance: new Date(2024, 0, 10)
+        lastMaintenance: new Date(2025, 0, 10)
       },
       {
         id: 2,
@@ -366,7 +366,7 @@ export const useSafetyStore = defineStore('safety', () => {
         installDate: new Date(2023, 6, 20),
         status: '运行中',
         recordingDays: 30,
-        lastMaintenance: new Date(2024, 0, 8)
+        lastMaintenance: new Date(2025, 0, 8)
       }
     ]
   }

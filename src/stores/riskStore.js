@@ -19,9 +19,9 @@ export const useRiskStore = defineStore('risk', () => {
         probability: 0.3,
         impact: 0.9,
         status: '活跃',
-        owner: '李明',
+        owner: '俞宏斌',
         department: '生产部',
-        createdAt: new Date(2024, 0, 15),
+        createdAt: new Date(2025, 0, 15),
         mitigation: '配备安全绳、安全帽、定期培训'
       },
       {
@@ -33,9 +33,9 @@ export const useRiskStore = defineStore('risk', () => {
         probability: 0.4,
         impact: 0.8,
         status: '活跃',
-        owner: '王刚',
+        owner: '刘威',
         department: '维护部',
-        createdAt: new Date(2024, 0, 10),
+        createdAt: new Date(2025, 0, 10),
         mitigation: '安装防护装置、定期维护检查'
       },
       {
@@ -47,9 +47,9 @@ export const useRiskStore = defineStore('risk', () => {
         probability: 0.2,
         impact: 0.95,
         status: '受控',
-        owner: '张华',
+        owner: '漆刚',
         department: '仓储部',
-        createdAt: new Date(2024, 0, 5),
+        createdAt: new Date(2025, 0, 5),
         mitigation: '安装泄露检测系统、定期检查容器'
       },
       {
@@ -61,9 +61,9 @@ export const useRiskStore = defineStore('risk', () => {
         probability: 0.15,
         impact: 0.7,
         status: '活跃',
-        owner: '陈军',
+        owner: '俞宏斌',
         department: '电气部',
-        createdAt: new Date(2024, 0, 1),
+        createdAt: new Date(2025, 0, 1),
         mitigation: '定期电气检查、安装灭火器'
       },
       {
@@ -75,9 +75,9 @@ export const useRiskStore = defineStore('risk', () => {
         probability: 0.6,
         impact: 0.3,
         status: '活跃',
-        owner: '刘英',
+        owner: '刘威',
         department: '生产部',
-        createdAt: new Date(2023, 11, 28),
+        createdAt: new Date(2025, 0, 3),
         mitigation: '配备耳塞、定期听力检查'
       }
     ]
@@ -90,8 +90,8 @@ export const useRiskStore = defineStore('risk', () => {
         type: '工伤事故',
         severity: 'high',
         status: '处理中',
-        reportedBy: '王小红',
-        reportedDate: new Date(2024, 0, 20),
+        reportedBy: '俞宏斌',
+        reportedDate: new Date(2025, 0, 20),
         location: '生产车间A',
         affectedPersons: 1,
         resolution: '已就医治疗，进行安全培训'
@@ -103,8 +103,8 @@ export const useRiskStore = defineStore('risk', () => {
         type: '设备事故',
         severity: 'medium',
         status: '已解决',
-        reportedBy: '李技师',
-        reportedDate: new Date(2024, 0, 18),
+        reportedBy: '刘威',
+        reportedDate: new Date(2025, 0, 18),
         location: '生产车间B',
         affectedPersons: 0,
         resolution: '更换液压管路，恢复正常运行'
@@ -116,8 +116,8 @@ export const useRiskStore = defineStore('risk', () => {
         type: '环境事故',
         severity: 'medium',
         status: '已解决',
-        reportedBy: '张清洁员',
-        reportedDate: new Date(2024, 0, 15),
+        reportedBy: '漆刚',
+        reportedDate: new Date(2025, 0, 15),
         location: '仓储区',
         affectedPersons: 0,
         resolution: '及时清理，受伤人员已处理'
@@ -133,8 +133,8 @@ export const useRiskStore = defineStore('risk', () => {
         location: '生产车间A',
         manufacturer: '华机制造',
         purchaseDate: new Date(2020, 5, 15),
-        lastMaintenance: new Date(2024, 0, 10),
-        nextMaintenance: new Date(2024, 2, 10),
+        lastMaintenance: new Date(2025, 0, 10),
+        nextMaintenance: new Date(2025, 2, 10),
         status: '正常',
         riskLevel: 'high',
         notes: '定期维护中'
@@ -147,8 +147,8 @@ export const useRiskStore = defineStore('risk', () => {
         location: '焊接车间',
         manufacturer: '焊星电气',
         purchaseDate: new Date(2019, 8, 20),
-        lastMaintenance: new Date(2024, 0, 5),
-        nextMaintenance: new Date(2024, 3, 5),
+        lastMaintenance: new Date(2025, 0, 5),
+        nextMaintenance: new Date(2025, 3, 5),
         status: '正常',
         riskLevel: 'high',
         notes: '需要定期安全检查'
@@ -161,8 +161,8 @@ export const useRiskStore = defineStore('risk', () => {
         location: '仓储区',
         manufacturer: '安全之家',
         purchaseDate: new Date(2021, 2, 10),
-        lastMaintenance: new Date(2024, 0, 1),
-        nextMaintenance: new Date(2024, 6, 1),
+        lastMaintenance: new Date(2025, 0, 1),
+        nextMaintenance: new Date(2025, 6, 1),
         status: '正常',
         riskLevel: 'high',
         notes: '存储有毒有害物质'
@@ -174,23 +174,23 @@ export const useRiskStore = defineStore('risk', () => {
         id: 1,
         title: '月度安全检查',
         type: '定期检查',
-        date: new Date(2024, 0, 15),
-        auditor: '安全主任',
+        date: new Date(2025, 0, 15),
+        auditor: '俞宏斌',
         findings: ['电气线路老化', '灭火器过期'],
         score: 85,
         status: '已完成',
-        nextAudit: new Date(2024, 1, 15)
+        nextAudit: new Date(2025, 1, 15)
       },
       {
         id: 2,
         title: '高处作业安全评估',
         type: '专项检查',
-        date: new Date(2024, 0, 10),
-        auditor: '外部审计员',
+        date: new Date(2025, 0, 10),
+        auditor: '刘威',
         findings: ['安全绳磨损', '培训记录不完整'],
         score: 78,
         status: '已完成',
-        nextAudit: new Date(2024, 3, 10)
+        nextAudit: new Date(2025, 3, 10)
       }
     ]
   }
