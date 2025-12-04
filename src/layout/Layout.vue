@@ -49,6 +49,22 @@ const menuItems = [
   { path: '/assets', label: '资产管理', icon: '🔧' },
   { path: '/audit', label: '安全审计', icon: '✓' },
   { path: '/reports', label: '报表分析', icon: '📈' },
+  // 生产安全
+  { path: '/operation-safety', label: '操作安全', icon: '🏭', category: '生产安全' },
+  { path: '/special-operations', label: '特种作业', icon: '🪜', category: '生产安全' },
+  { path: '/work-injuries', label: '工伤管理', icon: '🏥', category: '生产安全' },
+  // 消防安全
+  { path: '/fire-controls', label: '消防控制', icon: '🔴', category: '消防安全' },
+  { path: '/hot-work-permits', label: '动火作业', icon: '🔥', category: '消防安全' },
+  { path: '/fire-drills', label: '消防演练', icon: '🚒', category: '消防安全' },
+  // 环保安全
+  { path: '/waste-waters', label: '废水监测', icon: '💧', category: '环保安全' },
+  { path: '/waste-gases', label: '废气监测', icon: '💨', category: '环保安全' },
+  { path: '/hazardous-wastes', label: '危险废物', icon: '⚠️', category: '环保安全' },
+  { path: '/hazardous-chemicals', label: '危险化学品', icon: '🧪', category: '环保安全' },
+  // 园区安全
+  { path: '/access-controls', label: '门禁管理', icon: '🔐', category: '园区安全' },
+  { path: '/surveillances', label: '监控系统', icon: '📹', category: '园区安全' },
   { path: '/settings', label: '系统设置', icon: '⚙️' }
 ]
 
